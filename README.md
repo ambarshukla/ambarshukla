@@ -21,6 +21,11 @@ row-level security, column masking, audit trails, access reviews.
 
 ---
 
-Both run on synthetic data, but the formats are real and so are the injected defects.
+### [fieldnotes](https://github.com/ambarshukla/fieldnotes)
+
+Notes from various data tech learning and labs. Heavily influenced by "Designing Data Intensive Applications".
+
+---
+
 
 [LinkedIn](https://www.linkedin.com/in/ambarshukla)
