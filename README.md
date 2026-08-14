@@ -21,11 +21,4 @@ row-level security, column masking, audit trails, access reviews.
 
 ---
 
-### [fieldnotes](https://github.com/ambarshukla/fieldnotes)
-
-Notes from various data tech learning and labs. Heavily influenced by "Designing Data Intensive Applications".
-
----
-
-
 [LinkedIn](https://www.linkedin.com/in/ambarshukla)
