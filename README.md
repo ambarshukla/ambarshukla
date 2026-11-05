@@ -1,6 +1,6 @@
 ## My projects/learnings/experiments with various data technologies
 
-Three data platforms, all finance-shaped, all built end to end rather than as demos.
+Four data platforms, all finance-shaped, all built end to end rather than as demos.
 
 > **All independent personal projects.** Built entirely from public sources and
 > synthetic data, on personal time and equipment. They contain no confidential,
@@ -24,6 +24,23 @@ DuckDB, Dagster and FastAPI, in containers with an automatic deploy on merge.
 Live: [data](https://merx.ambarshukla.dev/client) ·
 [two sources](https://merx.ambarshukla.dev/sources) ·
 [operations](https://merx.ambarshukla.dev/ops)
+
+### [pretium](https://github.com/ambarshukla/pretium)
+
+A price-comparison platform for sending money abroad. Four real public sources (World Bank
+remittance prices, and ECB reference rates over three channels) are collected politely on
+their own schedules, kept with a hash of every page fetched, checked, and reconciled to the
+last digit. Rates flow through Kafka into Postgres and out to a comparison site.
+
+When a source changes its page layout, a local LLM proposes new selectors, and nothing is
+accepted unless the result matches the official data exactly. Replayed over nine years of
+archived copies of one page, it read 118 of 119 correctly, with no wrong numbers.
+
+Java 21, Spring Boot, Kafka and Postgres, a Next.js front end, with an automatic deploy on merge.
+
+Live: [comparison](https://pretium.ambarshukla.dev) ·
+[operations](https://pretium.ambarshukla.dev/ops) ·
+[method](https://pretium.ambarshukla.dev/about)
 
 ### [parvum](https://github.com/ambarshukla/parvum)
 
