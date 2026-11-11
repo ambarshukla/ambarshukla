@@ -5,6 +5,23 @@ Four data platforms, all finance-shaped, all built end to end rather than as dem
 > **All independent personal projects.** Built entirely from public sources and
 > synthetic data, on personal time and equipment.
 
+### [rivus](https://github.com/ambarshukla/rivus)
+
+Kafka, Flink SQL, ClickHouse, Redis, a C# API with SignalR, Airflow and dbt on DuckDB.
+Runs in Docker Compose on one machine; not hosted.
+
+A streaming market-data pipeline. Live trades from three crypto exchanges' public feeds
+become one-second and one-minute price bars within about four seconds, with late trades,
+sequence gaps and cross-venue differences recorded as they happen.
+
+Every hour a batch job rebuilds the same bars from the raw messages with separately
+written parsing, and every difference from the stream is classified. Everything downstream
+of the raw messages can be deleted and rebuilt by replaying them.
+
+[Screenshots](https://github.com/ambarshukla/rivus#what-it-looks-like) ·
+[architecture](https://github.com/ambarshukla/rivus/blob/main/docs/ARCHITECTURE.md) ·
+[build log](https://github.com/ambarshukla/rivus/blob/main/docs/BUILD_LOG.md)
+
 ### [merx](https://github.com/ambarshukla/merx)
 
 DuckDB, Dagster, FastAPI, Docker containers. Hetzner hosted.
