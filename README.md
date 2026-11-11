@@ -1,6 +1,6 @@
 ## My projects/learnings/experiments with various data technologies
 
-Four data platforms, all finance-shaped, all built end to end rather than as demos.
+Five data platforms, all finance-shaped, all built end to end rather than as demos.
 
 > **All independent personal projects.** Built entirely from public sources and
 > synthetic data, on personal time and equipment.
